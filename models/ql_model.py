@@ -10,7 +10,7 @@ class TaubularQfunction:
         self.num_actions = num_actions
         self.q_func = dict()
 
-    def __cal__(self, x):
+    def __call__(self, x):
         return self.forward(x)
 
     def forward(self, x):
@@ -257,8 +257,14 @@ def main():
                                flat_obs = True)
     agent = QLearningAgent(env,
                             verbose = args.quite,
-                            **vars(args)
-    )
+                            seed = args.seed,
+                            lr = args.lr,
+                            training_steps = args.training_steps,
+                            final_epsilon = args.final_epsilon,
+                            exploration_steps = args.exploration_steps,
+                            gamma = args.gamma
+                            )
+    
     agent.train()
     print("q_table after training.")
     agent.qfunc.display()
