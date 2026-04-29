@@ -1,7 +1,7 @@
 RL Projects for Cybersecurity
 =============================
 
-Tuyển tập các mô hình RL/DRL áp dụng cho bài toán an ninh mạng (network penetration / cybersecurity) trên bộ môi trường NASim. Hiện tại repo đã hoàn thiện:
+Tuyển tập các mô hình RL/DRL áp dụng cho bài toán an ninh mạng (network penetration / cybersecurity) trên bộ môi trường NASim. Hiện tại repo đã hoàn thiện 2 model chính:
 
 - **Tabular Q-Learning** với **Experience Replay** trên NASim benchmark.
 

@@ -1,7 +1,8 @@
 import numpy as np
 def main():
     print("Hello World!")
-    r_batch = np.array([1, 2, 3])
-    print(1 - r_batch)
+    layers = [64, 64]
+    for r in range(1, len(layers)):
+        print(f"Layer {r} has {layers[r]} neurons")
 if __name__ == "__main__":
     main()
